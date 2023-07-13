@@ -1,10 +1,12 @@
-import React from 'react';
-import './App.css';
-import { UIContainer } from './components/UI/UIContainer';
+import "./App.css";
+import UIContainer from "./components/ui/UIContainer";
+import FiltersContextProvider from "./store/FiltersContext";
 
 function App() {
   return (
-    <UIContainer/>
+    <FiltersContextProvider>
+      <UIContainer />
+    </FiltersContextProvider>
   );
 }
 
